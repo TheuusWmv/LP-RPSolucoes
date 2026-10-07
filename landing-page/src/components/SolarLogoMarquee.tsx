@@ -1,12 +1,13 @@
+import { OptimizedImage } from "./OptimizedImage";
 import React from "react";
 import { InfiniteSlider } from "./ui/infinite-slider";
 import { BlurReveal } from "./ui/blur-reveal";
 
-import bydLogo from "../assets/logos/byd.svg";
-import froniusLogo from "../assets/logos/fronius.svg";
-import huaweiLogo from "../assets/logos/huawei.svg";
-import sungrowLogo from "../assets/logos/sungrow.svg";
-import wegLogo from "../assets/logos/weg.svg";
+const bydLogo = "/logos/byd.svg";
+const froniusLogo = "/logos/fronius.svg";
+const huaweiLogo = "/logos/huawei.svg";
+const sungrowLogo = "/logos/sungrow.svg";
+const wegLogo = "/logos/weg.svg";
 
 interface SolarBrandItem {
   id: string;
@@ -64,8 +65,9 @@ export const SolarLogoMarquee: React.FC = () => {
         blur="8px"
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 sm:mb-5 text-center"
       >
-        <p className="text-xs font-bold uppercase tracking-widest text-slate-400">
-          Usinas construídas exclusivamente com as maiores fabricantes solares Tier 1 do mundo
+        <p className="text-xs font-bold uppercase tracking-widest text-slate-600">
+          Usinas construídas exclusivamente com as maiores fabricantes solares
+          Tier 1 do mundo
         </p>
       </BlurReveal>
 
@@ -75,7 +77,11 @@ export const SolarLogoMarquee: React.FC = () => {
         blur="10px"
         className="relative h-16 sm:h-20 w-full overflow-hidden flex items-center"
       >
-        <InfiniteSlider className="flex h-full w-full items-center" duration={32} gap={64}>
+        <InfiniteSlider
+          className="flex h-full w-full items-center"
+          duration={32}
+          gap={64}
+        >
           {baseBrands.map((brand, index) => (
             <div
               key={`${brand.id}-${index}`}
@@ -83,7 +89,7 @@ export const SolarLogoMarquee: React.FC = () => {
               title={`${brand.name} — ${brand.category}`}
             >
               <div className="flex shrink-0 items-center justify-center grayscale contrast-125 opacity-60 hover:opacity-100 transition-opacity duration-200 ease-out-strong">
-                <img
+                <OptimizedImage
                   src={brand.logoSrc}
                   alt={brand.name}
                   className={`w-auto max-w-none shrink-0 object-contain ${brand.heightClass}`}

@@ -1,6 +1,14 @@
+import { OptimizedImage } from "./OptimizedImage";
 import React, { useRef } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
-import { Zap, ShieldCheck, Award, ArrowUpRight, Sun, TrendingDown } from "lucide-react";
+import {
+  Zap,
+  ShieldCheck,
+  Award,
+  ArrowUpRight,
+  Sun,
+  TrendingDown,
+} from "lucide-react";
 import { templateData } from "../data/templateData";
 import { BlurReveal, BlurRevealGroup, BlurRevealItem } from "./ui/blur-reveal";
 import { AnimatedCounter } from "./ui/animated-counter";
@@ -14,7 +22,7 @@ export const AboutUs: React.FC = () => {
   const isHighlightInView = useInView(highlightRef, { amount: 0.2 });
 
   const whatsappUrl = `https://wa.me/${company.whatsapp}?text=${encodeURIComponent(
-    "Olá! Gostaria de entender qual projeto solar faz sentido para o meu imóvel com a RP Soluções."
+    "Olá! Gostaria de entender qual projeto solar faz sentido para o meu imóvel com a RP Soluções.",
   )}`;
 
   return (
@@ -51,7 +59,8 @@ export const AboutUs: React.FC = () => {
                     }
                     transition={{
                       duration: 0.05,
-                      delay: isHighlightInView && !shouldReduceMotion ? 0.38 : 0,
+                      delay:
+                        isHighlightInView && !shouldReduceMotion ? 0.38 : 0,
                     }}
                     className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-[var(--brand-accent)] text-[var(--brand-accent-text)] text-2xl sm:text-3xl lg:text-4xl font-black align-middle shadow-xs"
                   >
@@ -71,13 +80,13 @@ export const AboutUs: React.FC = () => {
                       transition={
                         isHighlightInView
                           ? {
-                            duration: 0.65,
-                            delay: 0.18,
-                            ease: [0.23, 1, 0.32, 1],
-                          }
+                              duration: 0.65,
+                              delay: 0.18,
+                              ease: [0.23, 1, 0.32, 1],
+                            }
                           : {
-                            duration: 0.01,
-                          }
+                              duration: 0.01,
+                            }
                       }
                       className="absolute inset-0 bg-neutral-950 rounded-full z-20 pointer-events-none"
                       aria-hidden="true"
@@ -91,9 +100,11 @@ export const AboutUs: React.FC = () => {
 
           <BlurReveal delay={0.18} yOffset={20} blur="8px" className="max-w-md">
             <p className="text-base text-slate-600 leading-relaxed lg:pb-1 font-normal">
-              Antes de contratar, entenda quanto investir, quanto pode economizar e como a sua usina será instalada.
-              A RP Soluções Inteligentes conduz todas as fases: viabilidade técnica, projeto elétrico de engenharia com ART,
-              homologação completa na Equatorial Goiás e pós-venda permanente.
+              Antes de contratar, entenda quanto investir, quanto pode
+              economizar e como a sua usina será instalada. A RP Soluções
+              Inteligentes conduz todas as fases: viabilidade técnica, projeto
+              elétrico de engenharia com ART, homologação completa na Equatorial
+              Goiás e pós-venda permanente.
             </p>
           </BlurReveal>
         </div>
@@ -103,8 +114,12 @@ export const AboutUs: React.FC = () => {
         {/* ========================================================================= */}
         <div className="mobile-bento md:hidden grid grid-cols-2 gap-3 mb-2">
           {/* Card 1: Foto Vertical Principal */}
-          <BlurReveal yOffset={20} blur="6px" className="relative rounded-[2rem] overflow-hidden col-span-2 min-h-[240px] border border-slate-200/80 shadow-md flex flex-col justify-end p-5">
-            <img
+          <BlurReveal
+            yOffset={20}
+            blur="6px"
+            className="relative rounded-[2rem] overflow-hidden col-span-2 min-h-[240px] border border-slate-200/80 shadow-md flex flex-col justify-end p-5"
+          >
+            <OptimizedImage
               src="/images/projetos/usina-solo-destaque.png"
               alt="Usinas solares em solo instaladas pela RP Soluções"
               className="absolute inset-0 w-full h-full object-cover"
@@ -126,8 +141,12 @@ export const AboutUs: React.FC = () => {
           </BlurReveal>
 
           {/* Card 2: Foto Horizontal dos Painéis */}
-          <BlurReveal yOffset={20} blur="6px" className="relative rounded-[2rem] overflow-hidden col-span-2 order-3 min-h-[160px] border border-slate-200/80 shadow-md flex items-end justify-between p-5">
-            <img
+          <BlurReveal
+            yOffset={20}
+            blur="6px"
+            className="relative rounded-[2rem] overflow-hidden col-span-2 order-3 min-h-[160px] border border-slate-200/80 shadow-md flex items-end justify-between p-5"
+          >
+            <OptimizedImage
               src="/images/projetos/bombeamento-solar-represa.jpg"
               alt="Bombeamento solar em represa para agronegócio"
               className="absolute inset-0 w-full h-full object-cover"
@@ -158,13 +177,21 @@ export const AboutUs: React.FC = () => {
           {/* Cards 3 & 4: 2 Colunas Lado a Lado (Stats Compactos) */}
           <div className="col-span-2 grid grid-cols-2 gap-3">
             {/* Card 3: 95% Card (Todo o texto em branco) */}
-            <BlurReveal yOffset={16} blur="6px" className="min-h-[176px] min-w-0 rounded-[1.75rem] bg-gradient-to-br from-[#07263F] to-[#0A4D7E] p-4 flex flex-col justify-between border border-[#009ED7]/40 shadow-lg shadow-sky-950/20 text-white">
+            <BlurReveal
+              yOffset={16}
+              blur="6px"
+              className="min-h-[176px] min-w-0 rounded-[1.75rem] bg-gradient-to-br from-[#07263F] to-[#0A4D7E] p-4 flex flex-col justify-between border border-[#009ED7]/40 shadow-lg shadow-sky-950/20 text-white"
+            >
               <div className="flex items-center justify-between mb-2">
                 <TrendingDown className="w-5 h-5 text-white" />
-                <span className="text-xs font-extrabold uppercase tracking-wider text-white">Economia</span>
+                <span className="text-xs font-extrabold uppercase tracking-wider text-white">
+                  Economia
+                </span>
               </div>
               <div>
-                <span className="text-xs font-semibold text-white/90 block">Redução de até</span>
+                <span className="text-xs font-semibold text-white/90 block">
+                  Redução de até
+                </span>
                 <div className="text-4xl font-black text-white tracking-tighter leading-none my-1">
                   <AnimatedCounter value={95} suffix="%" duration={1.2} />
                 </div>
@@ -175,7 +202,11 @@ export const AboutUs: React.FC = () => {
             </BlurReveal>
 
             {/* Card 4: Sede Própria no fundo claro com gradiente */}
-            <BlurReveal yOffset={16} blur="6px" className="min-h-[176px] min-w-0 rounded-[1.75rem] bg-gradient-to-br from-white via-slate-50/70 to-slate-100/80 text-neutral-950 p-4 flex flex-col justify-between border border-slate-200/90 shadow-md">
+            <BlurReveal
+              yOffset={16}
+              blur="6px"
+              className="min-h-[176px] min-w-0 rounded-[1.75rem] bg-gradient-to-br from-white via-slate-50/70 to-slate-100/80 text-neutral-950 p-4 flex flex-col justify-between border border-slate-200/90 shadow-md"
+            >
               <div className="flex items-center justify-between mb-2">
                 <Sun className="w-4 h-4 text-[#FFCC29]" />
                 <span className="w-2 h-2 rounded-full bg-[#009ED7]" />
@@ -199,7 +230,8 @@ export const AboutUs: React.FC = () => {
         {/* DESKTOP BENTO GRID (5 cards com fotos e dados reais RP Soluções)          */}
         {/* ========================================================================= */}
         <p className="md:hidden text-xs leading-relaxed text-slate-600 mt-4 mb-6">
-          Solicite uma indicação de equipamentos e garantias para o seu projeto com a RP Soluções Inteligentes.
+          Solicite uma indicação de equipamentos e garantias para o seu projeto
+          com a RP Soluções Inteligentes.
         </p>
 
         <BlurRevealGroup
@@ -212,7 +244,7 @@ export const AboutUs: React.FC = () => {
             yOffset={28}
             className="lg:col-span-7 relative min-h-[360px] sm:min-h-[440px] rounded-[2rem] overflow-hidden group shadow-lg shadow-neutral-900/5 border border-slate-200/80 flex flex-col justify-between p-6 sm:p-8"
           >
-            <img
+            <OptimizedImage
               src="/images/projetos/usina-solo-destaque.png"
               alt="Instalação de usina solar em solo pela RP Soluções Inteligentes"
               className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-240 ease-out-strong group-hover:scale-[1.03]"
@@ -237,8 +269,10 @@ export const AboutUs: React.FC = () => {
                 A economia definitiva começa com um projeto bem dimensionado
               </h3>
               <p className="text-xs sm:text-sm text-slate-200/90 leading-relaxed">
-                Seu padrão de consumo, a orientação solar da sua cobertura ou solo e a proteção contra sombreamento orientam cada detalhe.
-                É assim que garantimos a máxima geração de kWh para sua casa, empresa ou fazenda em Goiás.
+                Seu padrão de consumo, a orientação solar da sua cobertura ou
+                solo e a proteção contra sombreamento orientam cada detalhe. É
+                assim que garantimos a máxima geração de kWh para sua casa,
+                empresa ou fazenda em Goiás.
               </p>
             </div>
           </BlurRevealItem>
@@ -258,17 +292,22 @@ export const AboutUs: React.FC = () => {
             </div>
 
             <div className="my-6 sm:my-8">
-              <span className="text-xs font-semibold text-white/90 block">Redução garantida de até</span>
+              <span className="text-xs font-semibold text-white/90 block">
+                Redução garantida de até
+              </span>
               <div className="text-5xl sm:text-6xl font-black text-white tracking-tighter leading-none my-2">
                 <AnimatedCounter value={95} suffix="%" duration={1.2} />
               </div>
               <p className="text-sm sm:text-base font-semibold text-white leading-snug">
-                na conta de luz da concessionária, gerando retorno sobre o investimento entre 4 e 7 anos.
+                na conta de luz da concessionária, gerando retorno sobre o
+                investimento entre 4 e 7 anos.
               </p>
             </div>
 
             <p className="text-xs text-white/80 leading-relaxed border-t border-white/20 pt-4">
-              Parcelas de financiamento que se pagam com a própria economia mensal, gerando previsibilidade financeira imediata para o seu imóvel ou propriedade rural.
+              Parcelas de financiamento que se pagam com a própria economia
+              mensal, gerando previsibilidade financeira imediata para o seu
+              imóvel ou propriedade rural.
             </p>
           </BlurRevealItem>
 
@@ -289,7 +328,9 @@ export const AboutUs: React.FC = () => {
                 Sanclerlândia - GO
               </div>
               <p className="text-xs text-slate-600 leading-relaxed mt-3">
-                Atendimento especializado a mais de 20 municípios no Oeste e Centro Goiano, sob responsabilidade técnica de Raul Prado Nunes, unindo engenharia de ponta a suporte humano próximo.
+                Atendimento especializado a mais de 20 municípios no Oeste e
+                Centro Goiano, sob responsabilidade técnica de Raul Prado Nunes,
+                unindo engenharia de ponta a suporte humano próximo.
               </p>
             </div>
 
@@ -304,7 +345,7 @@ export const AboutUs: React.FC = () => {
             yOffset={28}
             className="lg:col-span-4 relative rounded-[2rem] overflow-hidden group shadow-lg border border-slate-200/80 flex flex-col justify-between p-7 sm:p-8 text-white min-h-[300px]"
           >
-            <img
+            <OptimizedImage
               src="/images/projetos/bombeamento-solar-represa.jpg"
               alt="Projeto de bombeamento solar em represa - RP Soluções"
               className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-240 ease-out-strong group-hover:scale-105"
@@ -324,7 +365,8 @@ export const AboutUs: React.FC = () => {
                 Bombeamento solar autônomo sem custos de diesel.
               </h4>
               <p className="text-xs text-slate-200/90 leading-relaxed">
-                Mova água de represas, rios e poços para caixas d'água e pastos de forma 100% independente da rede elétrica.
+                Mova água de represas, rios e poços para caixas d'água e pastos
+                de forma 100% independente da rede elétrica.
               </p>
             </div>
 
@@ -354,7 +396,9 @@ export const AboutUs: React.FC = () => {
                   Garantia de 25 anos
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Módulos Tier 1 (Osda e Sunova), inversores homologados (APsystems, Deye, Growatt) e homologação 100% conduzida na Equatorial Goiás.
+                  Módulos Tier 1 (Osda e Sunova), inversores homologados
+                  (APsystems, Deye, Growatt) e homologação 100% conduzida na
+                  Equatorial Goiás.
                 </p>
               </div>
             </div>

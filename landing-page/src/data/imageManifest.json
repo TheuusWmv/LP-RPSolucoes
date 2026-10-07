@@ -1,0 +1,227 @@
+{
+  "/images/avatar-carlos.jpg": {
+    "width": 240,
+    "height": 360,
+    "src": "/images/avatar-carlos-240.webp",
+    "srcSet": "/images/avatar-carlos-240.webp 240w"
+  },
+  "/images/avatar-fabiana.jpg": {
+    "width": 240,
+    "height": 360,
+    "src": "/images/avatar-fabiana-240.webp",
+    "srcSet": "/images/avatar-fabiana-240.webp 240w"
+  },
+  "/images/avatar-guilherme.jpg": {
+    "width": 240,
+    "height": 360,
+    "src": "/images/avatar-guilherme-240.webp",
+    "srcSet": "/images/avatar-guilherme-240.webp 240w"
+  },
+  "/images/avatar-leticia.jpg": {
+    "width": 240,
+    "height": 360,
+    "src": "/images/avatar-leticia-240.webp",
+    "srcSet": "/images/avatar-leticia-240.webp 240w"
+  },
+  "/images/avatar-mariana.jpg": {
+    "width": 240,
+    "height": 300,
+    "src": "/images/avatar-mariana-240.webp",
+    "srcSet": "/images/avatar-mariana-240.webp 240w"
+  },
+  "/images/avatar-roberto.jpg": {
+    "width": 240,
+    "height": 160,
+    "src": "/images/avatar-roberto-240.webp",
+    "srcSet": "/images/avatar-roberto-240.webp 240w"
+  },
+  "/images/parceiros/concessionaria-equatorial.svg": {
+    "src": "/images/parceiros/concessionaria-equatorial.svg",
+    "width": 280,
+    "height": 60
+  },
+  "/images/parceiros/financiamento-banco-do-brasil.png": {
+    "width": 1080,
+    "height": 1080,
+    "src": "/images/parceiros/financiamento-banco-do-brasil-1080.webp",
+    "srcSet": "/images/parceiros/financiamento-banco-do-brasil-480.webp 480w, /images/parceiros/financiamento-banco-do-brasil-1080.webp 1080w"
+  },
+  "/images/parceiros/financiamento-caixa.png": {
+    "width": 1080,
+    "height": 1080,
+    "src": "/images/parceiros/financiamento-caixa-1080.webp",
+    "srcSet": "/images/parceiros/financiamento-caixa-480.webp 480w, /images/parceiros/financiamento-caixa-1080.webp 1080w"
+  },
+  "/images/parceiros/financiamento-meufinanciamento-bv.png": {
+    "width": 1080,
+    "height": 1080,
+    "src": "/images/parceiros/financiamento-meufinanciamento-bv-1080.webp",
+    "srcSet": "/images/parceiros/financiamento-meufinanciamento-bv-480.webp 480w, /images/parceiros/financiamento-meufinanciamento-bv-1080.webp 1080w"
+  },
+  "/images/parceiros/financiamento-santander.png": {
+    "width": 1080,
+    "height": 1080,
+    "src": "/images/parceiros/financiamento-santander-1080.webp",
+    "srcSet": "/images/parceiros/financiamento-santander-480.webp 480w, /images/parceiros/financiamento-santander-1080.webp 1080w"
+  },
+  "/images/parceiros/financiamento-sicoob.png": {
+    "width": 1080,
+    "height": 1080,
+    "src": "/images/parceiros/financiamento-sicoob-1080.webp",
+    "srcSet": "/images/parceiros/financiamento-sicoob-480.webp 480w, /images/parceiros/financiamento-sicoob-1080.webp 1080w"
+  },
+  "/images/parceiros/financiamento-sicredi.png": {
+    "width": 1080,
+    "height": 1080,
+    "src": "/images/parceiros/financiamento-sicredi-1080.webp",
+    "srcSet": "/images/parceiros/financiamento-sicredi-480.webp 480w, /images/parceiros/financiamento-sicredi-1080.webp 1080w"
+  },
+  "/images/parceiros/financiamento-solfacil.png": {
+    "width": 1080,
+    "height": 1080,
+    "src": "/images/parceiros/financiamento-solfacil-1080.webp",
+    "srcSet": "/images/parceiros/financiamento-solfacil-480.webp 480w, /images/parceiros/financiamento-solfacil-1080.webp 1080w"
+  },
+  "/images/parceiros/parceiro-apsystems.jpg": {
+    "width": 1276,
+    "height": 1275,
+    "src": "/images/parceiros/parceiro-apsystems-1276.webp",
+    "srcSet": "/images/parceiros/parceiro-apsystems-480.webp 480w, /images/parceiros/parceiro-apsystems-1276.webp 1276w"
+  },
+  "/images/parceiros/parceiro-deye.jpg": {
+    "width": 225,
+    "height": 221,
+    "src": "/images/parceiros/parceiro-deye-225.webp",
+    "srcSet": "/images/parceiros/parceiro-deye-225.webp 225w"
+  },
+  "/images/parceiros/parceiro-growatt.png": {
+    "width": 225,
+    "height": 225,
+    "src": "/images/parceiros/parceiro-growatt-225.webp",
+    "srcSet": "/images/parceiros/parceiro-growatt-225.webp 225w"
+  },
+  "/images/parceiros/parceiro-osda-solar.jpg": {
+    "width": 356,
+    "height": 354,
+    "src": "/images/parceiros/parceiro-osda-solar-356.webp",
+    "srcSet": "/images/parceiros/parceiro-osda-solar-356.webp 356w"
+  },
+  "/images/parceiros/parceiro-sunova.jpg": {
+    "width": 400,
+    "height": 400,
+    "src": "/images/parceiros/parceiro-sunova-400.webp",
+    "srcSet": "/images/parceiros/parceiro-sunova-400.webp 400w"
+  },
+  "/images/projetos/bombeamento-solar-represa.jpg": {
+    "width": 1000,
+    "height": 1000,
+    "src": "/images/projetos/bombeamento-solar-represa-1000.webp",
+    "srcSet": "/images/projetos/bombeamento-solar-represa-480.webp 480w, /images/projetos/bombeamento-solar-represa-1000.webp 1000w"
+  },
+  "/images/projetos/projeto-lampada-conceito.jpg": {
+    "width": 1000,
+    "height": 1000,
+    "src": "/images/projetos/projeto-lampada-conceito-1000.webp",
+    "srcSet": "/images/projetos/projeto-lampada-conceito-480.webp 480w, /images/projetos/projeto-lampada-conceito-1000.webp 1000w"
+  },
+  "/images/projetos/residencial-telhado.jpg": {
+    "width": 1000,
+    "height": 1000,
+    "src": "/images/projetos/residencial-telhado-1000.webp",
+    "srcSet": "/images/projetos/residencial-telhado-480.webp 480w, /images/projetos/residencial-telhado-1000.webp 1000w"
+  },
+  "/images/projetos/usina-solo-agro.jpg": {
+    "width": 1000,
+    "height": 1000,
+    "src": "/images/projetos/usina-solo-agro-1000.webp",
+    "srcSet": "/images/projetos/usina-solo-agro-480.webp 480w, /images/projetos/usina-solo-agro-1000.webp 1000w"
+  },
+  "/images/projetos/usina-solo-destaque.png": {
+    "width": 1600,
+    "height": 1600,
+    "src": "/images/projetos/usina-solo-destaque-1280.webp",
+    "srcSet": "/images/projetos/usina-solo-destaque-480.webp 480w, /images/projetos/usina-solo-destaque-1280.webp 1280w"
+  },
+  "/images/solar-baterias.jpg": {
+    "width": 1000,
+    "height": 665,
+    "src": "/images/solar-baterias-1000.webp",
+    "srcSet": "/images/solar-baterias-480.webp 480w, /images/solar-baterias-1000.webp 1000w"
+  },
+  "/images/solar-comercial.jpg": {
+    "width": 1000,
+    "height": 563,
+    "src": "/images/solar-comercial-1000.webp",
+    "srcSet": "/images/solar-comercial-480.webp 480w, /images/solar-comercial-1000.webp 1000w"
+  },
+  "/images/solar-industrial.jpg": {
+    "width": 1000,
+    "height": 667,
+    "src": "/images/solar-industrial-1000.webp",
+    "srcSet": "/images/solar-industrial-480.webp 480w, /images/solar-industrial-1000.webp 1000w"
+  },
+  "/images/solar-residencial.jpg": {
+    "width": 1000,
+    "height": 666,
+    "src": "/images/solar-residencial-1000.webp",
+    "srcSet": "/images/solar-residencial-480.webp 480w, /images/solar-residencial-1000.webp 1000w"
+  },
+  "/images/solar-rural.jpg": {
+    "width": 1000,
+    "height": 665,
+    "src": "/images/solar-rural-1000.webp",
+    "srcSet": "/images/solar-rural-480.webp 480w, /images/solar-rural-1000.webp 1000w"
+  },
+  "/logo-clarotec.png": {
+    "width": 1400,
+    "height": 349,
+    "src": "/logo-clarotec-1280.webp",
+    "srcSet": "/logo-clarotec-480.webp 480w, /logo-clarotec-1280.webp 1280w"
+  },
+  "/logo-clarotec.svg": {
+    "src": "/logo-clarotec.svg",
+    "width": 1381,
+    "height": 419
+  },
+  "/logo-rp.png": {
+    "width": 1773,
+    "height": 918,
+    "src": "/logo-rp-1280.webp",
+    "srcSet": "/logo-rp-480.webp 480w, /logo-rp-1280.webp 1280w"
+  },
+  "/logo-worldplace.svg": {
+    "src": "/logo-worldplace.svg",
+    "width": 1773,
+    "height": 918
+  },
+  "/logos/byd.svg": {
+    "src": "/logos/byd.svg",
+    "width": 843,
+    "height": 510
+  },
+  "/logos/fronius.svg": {
+    "src": "/logos/fronius.svg",
+    "width": 260,
+    "height": 75
+  },
+  "/logos/huawei.svg": {
+    "src": "/logos/huawei.svg",
+    "width": 24,
+    "height": 24
+  },
+  "/logos/sungrow.svg": {
+    "src": "/logos/sungrow.svg",
+    "width": 1552,
+    "height": 340
+  },
+  "/logos/weg.svg": {
+    "src": "/logos/weg.svg",
+    "width": 979,
+    "height": 687
+  },
+  "/marca-worldplace.svg": {
+    "src": "/marca-worldplace.svg",
+    "width": 560,
+    "height": 419
+  }
+}
