@@ -9,6 +9,7 @@ import {
   Factory,
   BatteryCharging,
   SunMedium,
+  Droplets,
 } from "lucide-react";
 import { useMediaQuery } from "../lib/use-media-query";
 import { templateData } from "../data/templateData";
@@ -16,8 +17,11 @@ import { BlurReveal, BlurRevealGroup, BlurRevealItem } from "./ui/blur-reveal";
 
 // Icon mapping for each service
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
+  "bombeamento-solar": Droplets,
+  "offgrid-baterias": BatteryCharging,
   residencial: Home,
   comercial: Building2,
+  "usinas-solo-agro": Tractor,
   rural: Tractor,
   industrial: Factory,
   baterias: BatteryCharging,
@@ -25,8 +29,11 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 // Short names for collapsed cards (clean minimalist style matching ref.jpg)
 const shortNames: Record<string, string> = {
+  "bombeamento-solar": "Bombeamento",
+  "offgrid-baterias": "Off-Grid / Baterias",
   residencial: "Residencial",
   comercial: "Comercial",
+  "usinas-solo-agro": "Usinas em Solo / Agro",
   rural: "Rural & Agro",
   industrial: "Industrial",
   baterias: "Baterias",

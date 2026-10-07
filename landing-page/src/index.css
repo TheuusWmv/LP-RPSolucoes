@@ -4,7 +4,7 @@
 @import "tailwindcss/utilities";
 
 :focus-visible {
-  outline: 3px solid var(--brand-accent, #E9191B);
+  outline: 3px solid var(--brand-accent, #FF9900);
   outline-offset: 4px;
 }
 
@@ -45,13 +45,13 @@ html:not(.js-ready) #root [style*="filter"] {
 .faq-summary { list-style: none; }
 .faq-item[open] .faq-toggle { transform: rotate(45deg); }
 .faq-item[open] .faq-icon {
-  background-color: var(--brand-accent, #E9191B);
-  border-color: var(--brand-accent, #E9191B);
+  background-color: var(--brand-accent, #FF9900);
+  border-color: var(--brand-accent, #FF9900);
   color: #ffffff;
 }
 .faq-item[open] .faq-summary:hover .faq-icon {
-  background-color: var(--brand-accent-hover, #872325);
-  border-color: var(--brand-accent-hover, #872325);
+  background-color: var(--brand-accent-hover, #E67300);
+  border-color: var(--brand-accent-hover, #E67300);
 }
 
 @layer base {
@@ -82,7 +82,7 @@ html:not(.js-ready) #root [style*="filter"] {
   }
 
   ::selection {
-    background-color: var(--brand-accent, #E9191B);
+    background-color: var(--brand-accent, #FF9900);
     color: #ffffff;
   }
 }

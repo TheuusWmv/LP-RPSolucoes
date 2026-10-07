@@ -13,33 +13,35 @@
    * 1. PALETA DE CORES (COLOR TOKENS)
    * ========================================================================= */
   
-  /* World Place Solar (Paleta Institucional Oficial) */
-  --solar-lime: #E9191B; /* Vermelho Solar Claro - Destaque de Alta Conversão */
-  --solar-lime-hover: #872325; /* Vermelho Escuro - Estado Hover */
-  --solar-lime-active: #701d1f;
-  --solar-lime-soft: #fef2f2; /* Fundo suave avermelhado para pills e cards */
-  --solar-lime-border: rgba(233, 25, 27, 0.35);
-  --solar-lime-glow: rgba(233, 25, 27, 0.35);
-  --solar-lime-text: #ffffff; /* Branco para contraste máximo WCAG AAA sobre o vermelho */
+  /* RP Soluções Inteligentes (Paleta Institucional Oficial) */
+  --solar-lime: #FF9900; /* Laranja Solar Vibrante - Destaque de Alta Conversão */
+  --solar-lime-hover: #E67300;
+  --solar-lime-active: #CC5500;
+  --solar-lime-soft: #FFF7ED;
+  --solar-lime-border: rgba(255, 153, 0, 0.35);
+  --solar-lime-glow: rgba(255, 153, 0, 0.40);
+  --solar-lime-text: #000422;
 
-  /* Cores Institucionais World Place Solar */
-  --solar-red-primary: #E9191B;
-  --solar-red-dark: #872325;
-  --solar-gray-dark: #2C2E33;
-  --solar-blue-primary: #E9191B;
-  --solar-blue-dark: #2C2E33;
-  --solar-blue-light: #872325;
-  --solar-green-eco: #519048;
-  --solar-green-light: #74b852;
+  /* Cores Institucionais RP Soluções */
+  --solar-yellow-primary: #FF9900;
+  --solar-yellow-gold: #F59E0B;
+  --solar-orange-primary: #FF9900;
+  --solar-orange-hover: #E67300;
+  --solar-blue-primary: #374382; /* Azul Real Oficial RP Soluções */
+  --solar-blue-secondary: #4B5BA6;
+  --solar-blue-dark: #000422; /* Meia-noite Tecnológico */
+  --solar-blue-light: #BFD1FF; /* Azul Claro Suave */
+  --solar-green-eco: #10B981;
+  --solar-green-light: #34D399;
 
-  /* Escala de Cinza & Texto (Neutros Escuros com base no #2C2E33) */
-  --solar-neutral-950: #2C2E33; /* Cinza escuro corporativo da marca */
-  --solar-neutral-900: #202226; /* Títulos H1/H2, botões de ação escuros */
-  --solar-neutral-800: #383b42; /* Títulos secundários, texto de alta ênfase */
-  --solar-slate-700: #4a4e57; /* Labels de formulário, badges neutros */
-  --solar-slate-600: #5c626d; /* Parágrafos principais, textos explicativos */
-  --solar-slate-500: #737a87; /* Subtítulos, textos de apoio, placeholders */
-  --solar-slate-400: #979799; /* Cor de apoio da logo (cinza médio), bordas */
+  /* Escala de Cinza & Neutros (com base no Meia-noite Tecnológico #000422) */
+  --solar-neutral-950: #000422; /* Meia-noite Tecnológico da marca */
+  --solar-neutral-900: #111638; /* Azul noturno / Títulos H1/H2, botões escuros */
+  --solar-neutral-800: #1b2046; /* Títulos secundários, texto de alta ênfase */
+  --solar-slate-700: #2f3868; /* Labels de formulário, badges neutros */
+  --solar-slate-600: #47548a; /* Parágrafos principais, textos explicativos */
+  --solar-slate-500: #6573aa; /* Subtítulos, textos de apoio, placeholders */
+  --solar-slate-400: #8c9ac8; /* Cor de apoio da logo, bordas sutis */
   --solar-slate-300: #cbd5e1; /* Bordas de inputs e dividers */
   --solar-slate-200: #e2e8f0; /* Bordas de cards, trilhas de progresso */
   --solar-slate-100: #f1f5f9; /* Fundos sutis, hover de cards, pills */
@@ -47,28 +49,32 @@
   --solar-white:     #ffffff; /* Fundo base principal, cards brancos */
 
   /* Tons Atmosféricos Solares */
-  --solar-deep-navy: #2C2E33;
-  --solar-midnight:  #1d1e21;
+  --solar-deep-navy: #000422;
+  --solar-midnight:  #000211;
+
+  /* Gradientes Oficiais RP Soluções */
+  --solar-gradient-cta: linear-gradient(135deg, #FF9900 0%, #F59E0B 100%);
+  --solar-gradient-hero: linear-gradient(115deg, #000211 0%, #000422 80%);
 
   /* Vidro & Glassmorphism */
   --solar-glass-bg-light: rgba(255, 255, 255, 0.75);
   --solar-glass-border-light: rgba(255, 255, 255, 0.4);
-  --solar-glass-bg-dark: rgba(10, 28, 48, 0.75);
+  --solar-glass-bg-dark: rgba(0, 4, 34, 0.75);
   --solar-glass-border-dark: rgba(255, 255, 255, 0.12);
   --solar-glass-highlight: rgba(255, 255, 255, 0.2);
 
   /* Status Semânticos */
   --solar-success: #16a34a;
   --solar-success-soft: #dcfce7;
-  --solar-warning: #eab308;
+  --solar-warning: #f59e0b;
   --solar-error: #ef4444;
   --solar-error-soft: #fee2e2;
 
   /* Aliases para compatibilidade de temas */
-  --brand-accent: var(--solar-lime);
-  --brand-accent-hover: var(--solar-lime-hover);
-  --brand-accent-soft: var(--solar-lime-soft);
-  --brand-accent-text: var(--solar-lime-text);
+  --brand-accent: #FF9900;
+  --brand-accent-hover: #E67300;
+  --brand-accent-text: #FFFFFF;
+  --brand-accent-soft: #FFF7ED;
 
   /* =========================================================================
    * 2. TIPOGRAFIA (TYPOGRAPHY TOKENS)
@@ -150,7 +156,7 @@
 /* Seleção de Texto */
 ::selection {
   background-color: var(--solar-lime);
-  color: var(--solar-neutral-950);
+  color: #ffffff;
 }
 
 /* Focus Visible Acessível Padrão */
@@ -305,9 +311,21 @@
   box-shadow: var(--solar-shadow-card);
 }
 
+/* Gradientes Utilitários RP Soluções */
+.solar-gradient-cta,
+.bg-gradient-cta {
+  background-image: var(--solar-gradient-cta);
+}
+
+.solar-gradient-hero,
+.bg-gradient-hero {
+  background-image: var(--solar-gradient-hero);
+}
+
 /* Card Escuro de Contraste (Hero e CTA) */
 .solar-card-dark {
   background-color: var(--solar-neutral-950);
+  background-image: var(--solar-gradient-hero);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--solar-radius-3xl);
   color: #ffffff;

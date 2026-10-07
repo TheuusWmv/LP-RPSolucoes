@@ -39,9 +39,9 @@ export const Navbar: React.FC = () => {
           <a
             href="#"
             className="flex items-center group transition-transform active:scale-95 shrink-0"
-            aria-label="World Place Solar - Início"
+            aria-label="RP Soluções Inteligentes - Início"
           >
-            <img src="/logo-worldplace.svg" alt="World Place Solar" className="h-8 sm:h-9 w-auto object-contain" />
+            <img src="/logo-rp.png" alt="RP Soluções Inteligentes" className="h-8 sm:h-9 w-auto object-contain" />
           </a>
 
           {/* Desktop Nav Links */}

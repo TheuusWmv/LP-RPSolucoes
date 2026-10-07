@@ -100,15 +100,14 @@ export const SolarFramedHero: React.FC = () => {
               className="absolute inset-0 border border-white/30 pointer-events-none z-20 rounded-[inherit]"
             />
 
-            {/* Background Image: Casa Moderna com Energia Solar */}
+            {/* Background Image: Projeto Real RP Soluções */}
             <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none transform-gpu">
               <img
-                src="/images/energia-solar-1920.webp"
-                srcSet="/images/energia-solar-640.webp 640w, /images/energia-solar-1280.webp 1280w, /images/energia-solar-1920.webp 1920w"
+                src="/images/projetos/residencial-telhado.jpg"
                 sizes="100vw"
                 // @ts-ignore
                 fetchpriority="high"
-                alt="Casa moderna sustentável com painéis solares fotovoltaicos"
+                alt="Instalação fotovoltaica de alta eficiência realizada pela RP Soluções Inteligentes"
                 decoding="async"
                 loading="eager"
                 className="w-full h-full object-cover object-[center_35%] lg:object-[center_30%] scale-[1.02] transform-gpu pointer-events-none select-none"
@@ -116,13 +115,13 @@ export const SolarFramedHero: React.FC = () => {
 
               {/* Directional Vignette & Legibility Gradients */}
               {/* Left-to-right gradient: Protects typography contrast while keeping house and solar roof clear */}
-              <div className="absolute inset-0 bg-gradient-to-r from-neutral-950/80 via-neutral-950/35 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-r from-neutral-950/85 via-neutral-950/45 to-transparent pointer-events-none" />
 
               {/* Bottom-up gradient: Anchors the bottom content */}
-              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/75 via-neutral-950/15 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/25 to-transparent pointer-events-none" />
 
               {/* Subtle top shade for notch shadow depth */}
-              <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-neutral-900/25 to-transparent pointer-events-none" />
+              <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-neutral-900/30 to-transparent pointer-events-none" />
             </div>
 
             {/* ========================================================================= */}
@@ -176,9 +175,9 @@ export const SolarFramedHero: React.FC = () => {
                   <a
                     href="#"
                     className="flex items-center group transition-transform active:scale-[0.97] shrink-0"
-                    aria-label="World Place Solar - Início"
+                    aria-label="RP Soluções Inteligentes - Início"
                   >
-                    <img src="/logo-worldplace.svg" alt="World Place Solar" className="h-8 md:h-9 w-auto object-contain" />
+                    <img src="/logo-rp.png" alt="RP Soluções Inteligentes" className="h-8 md:h-9 w-auto object-contain" />
                   </a>
 
                   {/* Center Desktop Navigation Links (Single line, spacious, elegant) */}
@@ -269,8 +268,8 @@ export const SolarFramedHero: React.FC = () => {
                 <BlurReveal className="hidden md:block" delay={0.08} yOffset={14} blur="6px">
                   <div className="inline-flex items-center gap-2 px-3 md:px-3.5 py-1 md:py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-[11px] md:text-xs font-medium tracking-wide mb-3 md:mb-5 shadow-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-[var(--brand-accent)] animate-pulse-subtle" />
-                    <span className="md:hidden">World Place Solar</span>
-                    <span className="hidden md:inline">Projetos & Instalação em Goiânia e Região</span>
+                    <span className="md:hidden">RP Soluções Inteligentes</span>
+                    <span className="hidden md:inline">RP Soluções Inteligentes • Sanclerlândia e Goiás</span>
                     <span className="hidden md:inline text-white/40">•</span>
                     <span className="hidden md:inline text-[var(--brand-accent)] font-semibold">Até 95% de Economia</span>
                   </div>
@@ -280,17 +279,14 @@ export const SolarFramedHero: React.FC = () => {
                 <BlurReveal delay={0.16} yOffset={22} blur="8px" as="h1">
                   <span className="text-[2.15rem] leading-[1.08] md:text-5xl lg:text-6xl xl:text-7xl text-white tracking-tight mb-3 md:mb-5 block">
                     <span className="md:hidden font-extrabold">
-                      Reduza em até 95% a sua conta de luz com{" "}
-                      <span className="text-[var(--brand-accent)]">energia solar.</span>
+                      Reduza em até 95% sua conta de luz com{" "}
+                      <span className="text-[var(--brand-accent)]">Engenharia Solar Especializada.</span>
                     </span>
                     <span className="hidden md:inline">
-                      <span className="italic font-serif font-normal text-white/95 pr-2 md:pr-3">
-                        Energia
-                      </span>
-                      <span className="font-extrabold text-white">solar.</span>
+                      <span className="font-extrabold text-white">Reduza em até</span>{" "}
+                      <span className="font-extrabold text-[var(--brand-accent)]">95% sua conta de luz</span>
                       <br />
-                      <span className="font-extrabold text-white">Reduza até</span>{" "}
-                      <span className="font-extrabold text-[var(--brand-accent)]">95% da sua conta.</span>
+                      <span className="font-extrabold text-white">com Engenharia Solar Especializada.</span>
                     </span>
                   </span>
                 </BlurReveal>
@@ -299,10 +295,10 @@ export const SolarFramedHero: React.FC = () => {
                 <BlurReveal delay={0.24} yOffset={20} blur="8px">
                   <p className="text-sm md:text-base lg:text-lg text-slate-200/90 font-normal leading-relaxed mb-6 md:mb-8 max-w-xl text-pretty">
                     <span className="md:hidden">
-                      Projetos e instalação de energia solar. Residencial | Comercial | Agronegócio em Goiânia e região.
+                      Projetos de engenharia solar e instalação de alta eficiência. Residencial, Comercial e Rural em Sanclerlândia e em todo o estado de Goiás.
                     </span>
                     <span className="hidden md:inline">
-                      Projetos e instalação de energia solar fotovoltaica para residências, empresas e agronegócio em Goiânia e em todo o estado de Goiás. Descubra a sua economia estimada com uma simulação gratuita e sem compromisso.
+                      Projetos de engenharia e instalação de energia solar fotovoltaica para residências, empresas e produtores rurais em Sanclerlândia e em todo o estado de Goiás. Descubra quanto você pode economizar com uma simulação gratuita e sem compromisso.
                     </span>
                   </p>
                 </BlurReveal>
@@ -337,7 +333,7 @@ export const SolarFramedHero: React.FC = () => {
                     {/* Mobile bottom indicator */}
                     <div className="md:hidden flex items-center justify-between text-xs text-white/70 font-medium">
                       <span className="text-[11px] tracking-tight">
-                        Residencial • Comercial • Agronegócio
+                        +6 Anos de Mercado • Engenharia com ART Própria
                       </span>
                       <a
                         href="#about"
@@ -349,18 +345,22 @@ export const SolarFramedHero: React.FC = () => {
                     </div>
 
                     {/* Desktop trust badges */}
-                    <div className="hidden md:flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-white/70 font-medium">
+                    <div className="hidden md:flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-white/80 font-medium">
                       <span className="flex items-center gap-1.5">
                         <CheckCircle2 className="w-3.5 h-3.5 text-[var(--brand-accent)]" />
-                        Simulação 100% gratuita
-                      </span>
-                      <span className="flex items-center gap-1.5">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-[var(--brand-accent)]" />
-                        Sem compromisso de contratar
+                        +6 Anos de Mercado
                       </span>
                       <span className="flex items-center gap-1.5">
                         <ShieldCheck className="w-3.5 h-3.5 text-[var(--brand-accent)]" />
-                        Residencial, Comercial e Agro
+                        Engenharia com ART Própria
+                      </span>
+                      <span className="flex items-center gap-1.5">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[var(--brand-accent)]" />
+                        Financiamento em até 120x
+                      </span>
+                      <span className="flex items-center gap-1.5">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-[var(--brand-accent)]" />
+                        Nota 4.8 no Google Maps
                       </span>
                     </div>
                   </div>
@@ -371,7 +371,7 @@ export const SolarFramedHero: React.FC = () => {
             {/* Giant Brand Watermark on Mobile */}
             <div className="hidden absolute bottom-1 inset-x-0 flex justify-center pointer-events-none select-none z-0 opacity-15 overflow-hidden">
               <span className="text-[20vw] font-black text-white tracking-tighter leading-none">
-                {company.shortName}
+                RP
               </span>
             </div>
           </motion.div>

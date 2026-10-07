@@ -45,7 +45,7 @@ export const FAQ: React.FC = () => {
                   Prefere conversar com a gente? Nossa equipe ajuda você a dar o primeiro passo.
                 </span>
                 <span className="hidden sm:inline">
-                  Quanto custa? Quando começa a economia? Veja o que considerar para decidir com segurança. Se a dúvida for sobre o seu imóvel, fale com um engenheiro da World Place Solar.
+                  Quanto custa? Quando começa a economia? Veja o que considerar para decidir com segurança. Se a dúvida for sobre o seu imóvel, fale com um engenheiro da RP Soluções Inteligentes.
                 </span>
               </p>
             </BlurRevealItem>

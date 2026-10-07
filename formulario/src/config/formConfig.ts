@@ -14,14 +14,14 @@ export interface BrandConfig {
 }
 
 export const brandConfig: BrandConfig = {
-  companyName: "World Place Solar",
-  logoText: "World Place Solar",
-  logoUrl: "/simulador/logo-worldplace.svg",
-  faviconUrl: "/simulador/favicon.svg?v=wp2",
-  accentColor: "#E9191B",
-  accentHoverColor: "#872325",
-  accentSoftColor: "#fef2f2",
-  accentTextColor: "#ffffff",
+  companyName: "RP Soluções Inteligentes",
+  logoText: "RP Soluções Inteligentes",
+  logoUrl: "/logo-rp.png",
+  faviconUrl: "/favicon-32x32.png",
+  accentColor: "#FF9900",
+  accentHoverColor: "#E67300",
+  accentSoftColor: "#FFF7ED",
+  accentTextColor: "#FFFFFF",
   landingPageUrl: "/",
   webhookUrl: "/api/leads",
 };

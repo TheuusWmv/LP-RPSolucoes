@@ -60,7 +60,7 @@ export const CTA: React.FC = () => {
               </span>
               <span className="hidden sm:inline">
                 O primeiro passo é descobrir quanto você pode economizar.
-                Preencha o simulador gratuito para que a equipe da World Place Solar prepare um estudo personalizado para o seu imóvel ou agronegócio.
+                Preencha o simulador gratuito para que a equipe da RP Soluções Inteligentes prepare um estudo personalizado para o seu imóvel ou agronegócio.
               </span>
             </p>
           </BlurReveal>
