@@ -6,7 +6,7 @@ import { templateData, type TestimonialItem } from "../data/templateData";
 import { BlurReveal } from "./ui/blur-reveal";
 
 const photoCardClassName =
-  "relative h-full w-full min-h-[380px] sm:min-h-[440px] rounded-3xl overflow-hidden shadow-2xl shadow-neutral-900/25 bg-neutral-900 group border border-slate-200/50";
+  "relative h-[440px] sm:h-[460px] lg:h-[480px] w-full rounded-3xl overflow-hidden shadow-2xl shadow-neutral-900/25 bg-neutral-900 group border border-slate-200/50";
 
 const TestimonialPhotoContent: React.FC<{ item: TestimonialItem }> = ({ item }) => (
   <>
@@ -64,7 +64,7 @@ const TestimonialPhotoContent: React.FC<{ item: TestimonialItem }> = ({ item }) 
 );
 
 const quoteCardClassName =
-  "relative h-full w-full rounded-3xl bg-gradient-to-br from-[#07263F] to-[#0B3B60] text-white p-6 sm:p-10 lg:p-12 shadow-2xl shadow-sky-950/25 border border-[#009ED7]/40 flex flex-col justify-between overflow-hidden";
+  "relative h-[440px] sm:h-[460px] lg:h-[480px] w-full rounded-3xl bg-gradient-to-br from-[#07263F] to-[#0B3B60] text-white p-6 sm:p-8 lg:p-10 shadow-2xl shadow-sky-950/25 border border-[#009ED7]/40 flex flex-col justify-between overflow-hidden";
 
 const TestimonialQuoteContent: React.FC<{ item: TestimonialItem; companyName: string }> = ({
   item,
@@ -78,36 +78,36 @@ const TestimonialQuoteContent: React.FC<{ item: TestimonialItem; companyName: st
     <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.25)_0%,transparent_70%)] pointer-events-none" />
 
     {/* Aspas estilizadas e destaque */}
-    <div className="relative z-10">
-      <div className="flex items-center justify-between mb-4">
+    <div className="relative z-10 flex-1 flex flex-col justify-start overflow-hidden">
+      <div className="flex items-center justify-between mb-3 sm:mb-4 shrink-0">
         <div
-          className="text-[#009ED7] text-5xl sm:text-6xl font-serif font-black leading-none select-none opacity-90"
+          className="text-[#009ED7] text-4xl sm:text-5xl lg:text-6xl font-serif font-black leading-none select-none opacity-90"
           aria-hidden="true"
         >
           ““
         </div>
         {item.highlight && (
-          <span className="px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-[#009ED7]/40 text-xs font-bold text-white shadow-xs">
+          <span className="px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-[#009ED7]/40 text-xs font-bold text-white shadow-xs shrink-0">
             {item.highlight}
           </span>
         )}
       </div>
 
-      {/* Texto do Feedback */}
-      <p className="text-white text-base sm:text-lg lg:text-xl font-medium leading-relaxed tracking-tight max-w-xl">
+      {/* Texto do Feedback com altura flexível harmoniosa */}
+      <p className="text-white text-sm sm:text-base lg:text-lg font-medium leading-relaxed tracking-tight max-w-xl overflow-y-auto pr-1">
         {item.quote}
       </p>
     </div>
 
     {/* Rodapé do Banner: Estrelas 4.8 + Identidade RP Soluções */}
-    <div className="relative z-10 flex flex-wrap items-center justify-between gap-4 pt-8 border-t border-white/20 mt-8">
+    <div className="relative z-10 shrink-0 flex flex-wrap items-center justify-between gap-3 pt-4 sm:pt-6 border-t border-white/20 mt-4 sm:mt-6">
       {/* Estrelas */}
       <div className="flex items-center gap-2 text-white">
         <div className="flex items-center gap-1 text-[#FFCC29]">
           {[...Array(5)].map((_, i) => (
             <Star
               key={i}
-              className="w-5 h-5 fill-current drop-shadow-xs"
+              className="w-4 h-4 sm:w-5 sm:h-5 fill-current drop-shadow-xs"
             />
           ))}
         </div>
@@ -242,7 +242,7 @@ export const Testimonials: React.FC = () => {
           <div className="relative">
             {/* MOBILE UNIFIED EDITORIAL TESTIMONIAL CARD (< lg screens) */}
             <div className="lg:hidden flex flex-col gap-4" aria-roledescription="carrossel" aria-label="Depoimentos de clientes">
-              <div className="grid min-w-0">
+              <div className="grid min-w-0 h-[440px] sm:h-[460px]">
                 {testimonials.flatMap((item, index) =>
                   [false, true].map((quote) => {
                     const selected = currentIndex === index && showQuote === quote;
@@ -307,10 +307,10 @@ export const Testimonials: React.FC = () => {
               </div>
             </div>
 
-            {/* DESKTOP TESTIMONIALS (2 Cards lado a lado mantidos para >= lg) */}
-            <div className="hidden lg:grid lg:grid-cols-12 gap-6 lg:gap-8 items-stretch w-full select-none">
+            {/* DESKTOP TESTIMONIALS (2 Cards lado a lado padronizados em altura exata) */}
+            <div className="hidden lg:grid lg:grid-cols-12 gap-6 lg:gap-8 items-stretch w-full select-none h-[480px]">
               {/* COLUNA ESQUERDA: Card da Obra */}
-              <div className="lg:col-span-5 min-h-[380px] sm:min-h-[440px] grid">
+              <div className="lg:col-span-5 h-[480px] grid">
                 <AnimatePresence initial={false}>
                   <motion.div
                     key={`card-img-${currentItem.id}`}
@@ -342,7 +342,7 @@ export const Testimonials: React.FC = () => {
               </div>
 
               {/* COLUNA DIREITA: Card de Texto do Feedback */}
-              <div className="lg:col-span-7 grid">
+              <div className="lg:col-span-7 h-[480px] grid">
                 <AnimatePresence initial={false}>
                   <motion.div
                     key={`card-text-${currentItem.id}`}

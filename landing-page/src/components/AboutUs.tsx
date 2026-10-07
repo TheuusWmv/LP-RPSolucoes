@@ -174,20 +174,20 @@ export const AboutUs: React.FC = () => {
               </div>
             </BlurReveal>
 
-            {/* Card 4: Dark Card */}
-            <BlurReveal yOffset={16} blur="6px" className="min-h-[176px] min-w-0 rounded-[1.75rem] bg-[#041A2E] text-white p-4 flex flex-col justify-between border border-[#009ED7]/40 shadow-md">
+            {/* Card 4: Sede Própria no fundo claro com gradiente */}
+            <BlurReveal yOffset={16} blur="6px" className="min-h-[176px] min-w-0 rounded-[1.75rem] bg-gradient-to-br from-white via-slate-50/70 to-slate-100/80 text-neutral-950 p-4 flex flex-col justify-between border border-slate-200/90 shadow-md">
               <div className="flex items-center justify-between mb-2">
                 <Sun className="w-4 h-4 text-[#FFCC29]" />
                 <span className="w-2 h-2 rounded-full bg-[#009ED7]" />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-white tracking-tight leading-snug">
+                <h4 className="text-sm font-bold text-neutral-950 tracking-tight leading-snug">
                   Energia limpa em Goiás.
                 </h4>
-                <div className="text-lg font-black text-[#FFCC29] tracking-tight mt-1">
+                <div className="text-lg font-black text-[#009ED7] tracking-tight mt-1">
                   Sanclerlândia/GO
                 </div>
-                <p className="text-xs text-slate-300 leading-tight mt-0.5">
+                <p className="text-xs text-slate-600 leading-tight mt-0.5">
                   Engenharia de Raul Prado Nunes.
                 </p>
               </div>
@@ -272,29 +272,30 @@ export const AboutUs: React.FC = () => {
             </p>
           </BlurRevealItem>
 
-          {/* Bento Item 3: Dark Navy Authority Card (Col 1-4) */}
+          {/* Bento Item 3: Sede Própria & Tradição (Col 1-4) com fundo claro e acentos da marca */}
           <BlurRevealItem
             yOffset={28}
-            className="lg:col-span-4 rounded-[2rem] bg-[#041A2E] text-white p-7 sm:p-8 flex flex-col justify-between shadow-xl border border-[#009ED7]/40 group"
+            className="lg:col-span-4 rounded-[2rem] bg-gradient-to-br from-white via-slate-50/70 to-slate-100/80 text-neutral-950 p-7 sm:p-8 flex flex-col justify-between shadow-md border border-slate-200/90 group"
           >
             <div>
               <div className="flex items-center justify-between mb-6">
                 <span className="text-xs font-bold uppercase tracking-widest text-[#009ED7]">
                   Sede Própria & Tradição
                 </span>
-                <span className="w-2.5 h-2.5 rounded-full bg-[#FFCC29] animate-pulse-subtle" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FFCC29] ring-4 ring-[#FFCC29]/20" />
               </div>
 
-              <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-2">
+              <div className="text-3xl sm:text-4xl font-extrabold text-neutral-950 tracking-tight mb-2">
                 Sanclerlândia - GO
               </div>
-              <p className="text-xs text-slate-300 leading-relaxed mt-3">
+              <p className="text-xs text-slate-600 leading-relaxed mt-3">
                 Atendimento especializado a mais de 20 municípios no Oeste e Centro Goiano, sob responsabilidade técnica de Raul Prado Nunes, unindo engenharia de ponta a suporte humano próximo.
               </p>
             </div>
 
-            <div className="pt-6 border-t border-white/10 mt-6 text-xs font-semibold text-[#FFCC29]">
-              Sanclerlândia/GO • Oeste e Centro Goiano
+            <div className="pt-6 border-t border-slate-200/80 mt-6 text-xs font-semibold text-[#009ED7] flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FFCC29]" />
+              <span>Sanclerlândia/GO • Oeste e Centro Goiano</span>
             </div>
           </BlurRevealItem>
 
@@ -333,26 +334,26 @@ export const AboutUs: React.FC = () => {
             </div>
           </BlurRevealItem>
 
-          {/* Bento Item 5: Warranty & Quality Card (Col 9-12) */}
+          {/* Bento Item 5: Equipamentos & ART (Col 9-12) com fundo claro e acentos da marca */}
           <BlurRevealItem
             yOffset={28}
-            className="lg:col-span-4 rounded-[2rem] bg-[#1e1e1e] text-white p-7 sm:p-8 flex flex-col justify-between shadow-lg border border-neutral-800"
+            className="lg:col-span-4 rounded-[2rem] bg-gradient-to-br from-white via-slate-50/70 to-slate-100/80 text-neutral-950 p-7 sm:p-8 flex flex-col justify-between shadow-md border border-slate-200/90 group"
           >
             <div>
               <div className="flex items-center justify-between mb-4">
-                <span className="text-xs font-bold uppercase tracking-widest text-slate-300">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#009ED7]">
                   Equipamentos & ART
                 </span>
-                <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[var(--brand-accent)]">
-                  <Award className="w-4 h-4" />
+                <div className="w-8 h-8 rounded-full bg-[#009ED7]/10 flex items-center justify-center text-[#009ED7]">
+                  <Award className="w-4 h-4 text-[#009ED7]" />
                 </div>
               </div>
 
               <div className="my-4">
-                <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-2">
+                <div className="text-2xl sm:text-3xl font-extrabold text-neutral-950 tracking-tight mb-2">
                   Garantia de 25 anos
                 </div>
-                <p className="text-xs text-slate-300 leading-relaxed">
+                <p className="text-xs text-slate-600 leading-relaxed">
                   Módulos Tier 1 (Osda e Sunova), inversores homologados (APsystems, Deye, Growatt) e homologação 100% conduzida na Equatorial Goiás.
                 </p>
               </div>
@@ -362,10 +363,10 @@ export const AboutUs: React.FC = () => {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-bold text-[var(--brand-accent)] hover:text-[var(--brand-accent-hover)] flex items-center gap-1 group pt-4 border-t border-white/10 transition-colors duration-160"
+              className="text-xs font-bold text-[#009ED7] hover:text-[#0082B3] flex items-center gap-1 group pt-4 border-t border-slate-200/80 transition-colors duration-160"
             >
               <span>Conversar com a RP Soluções</span>
-              <ArrowUpRight className="w-3.5 h-3.5 transition-transform duration-160 ease-out-strong group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <ArrowUpRight className="w-3.5 h-3.5 text-[#FFCC29] transition-transform duration-160 ease-out-strong group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </BlurRevealItem>
         </BlurRevealGroup>
