@@ -1,7 +1,6 @@
 import { OptimizedImage } from "./OptimizedImage";
 import React from "react";
 import { InfiniteSlider } from "./ui/infinite-slider";
-import { BlurReveal } from "./ui/blur-reveal";
 
 const bydLogo = "/logos/byd.svg";
 const froniusLogo = "/logos/fronius.svg";
@@ -59,24 +58,14 @@ export const SolarLogoMarquee: React.FC = () => {
 
   return (
     <section className="relative w-full bg-white pt-2 sm:pt-3 pb-8 sm:pb-10 border-b border-slate-100 overflow-hidden select-none">
-      <BlurReveal
-        delay={0.05}
-        yOffset={16}
-        blur="8px"
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 sm:mb-5 text-center"
-      >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 sm:mb-5 text-center">
         <p className="text-xs font-bold uppercase tracking-widest text-slate-600">
           Usinas construídas exclusivamente com as maiores fabricantes solares
           Tier 1 do mundo
         </p>
-      </BlurReveal>
+      </div>
 
-      <BlurReveal
-        delay={0.15}
-        yOffset={20}
-        blur="10px"
-        className="relative h-16 sm:h-20 w-full overflow-hidden flex items-center"
-      >
+      <div className="relative h-16 sm:h-20 w-full overflow-hidden flex items-center">
         <InfiniteSlider
           className="flex h-full w-full items-center"
           duration={32}
@@ -102,7 +91,7 @@ export const SolarLogoMarquee: React.FC = () => {
         {/* Gradiente suave de fade nas bordas esquerda e direita */}
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 sm:w-44 bg-gradient-to-r from-white to-transparent z-10" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-24 sm:w-44 bg-gradient-to-l from-white to-transparent z-10" />
-      </BlurReveal>
+      </div>
     </section>
   );
 };
