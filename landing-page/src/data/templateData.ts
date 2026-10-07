@@ -449,5 +449,23 @@ export const templateData = {
         "A instalação física dos painéis e equipamentos no local costuma levar entre 1 e 3 dias úteis. O processo completo de engenharia — que compreende vistoria técnica, elaboração dos projetos elétricos com ART, protocolo e parecer de acesso na Equatorial Goiás, vistoria da concessionária e troca do medidor — leva em média de 30 a 60 dias corridos, totalmente conduzidos pela RP Soluções.",
       category: "Instalação",
     },
+    {
+      question: "Como escolher o projeto solar ideal para minha residência, comércio ou propriedade rural?",
+      answer:
+        "A escolha do projeto ideal parte do seu histórico de consumo em kWh e das necessidades específicas da sua propriedade. No campo, avaliamos se a prioridade é corte de energia convencional na sede ou bombeamento solar autônomo para represas e bebedouros. Em imóveis urbanos, dimensionamos a área de telhado e o padrão de entrada. A proposta técnica detalha a geração estimada, marcas de inversores e módulos homologados pelo Inmetro e o tempo de retorno sobre o investimento.",
+      category: "Projetos",
+    },
+    {
+      question: "Qual a diferença entre sistema On-Grid conectado à rede e sistemas com baterias ou bombeamento?",
+      answer:
+        "O sistema On-Grid gera energia conectado à rede da concessionária Equatorial Goiás para reduzir até 95% da fatura. Sistemas com baterias (Off-Grid ou Híbridos) oferecem segurança 24h contra apagões em fazendas e comércios. Já o bombeamento solar opera diretamente com a radiação solar para mover água de poços e represas sem depender da rede elétrica nem de geradores a diesel.",
+      category: "Técnico",
+    },
+    {
+      question: "O que define o valor do investimento e como consultar a conformidade técnica dos equipamentos?",
+      answer:
+        "O valor do investimento depende da demanda de geração, do tipo de estrutura (telhado ou solo reforçado), da infraestrutura elétrica e dos equipamentos especificados. A RP Soluções fornece apenas módulos e inversores certificados pelo Inmetro e com Anotação de Responsabilidade Técnica (ART) assinada por engenheiro responsável, em estrita conformidade com as resoluções da ANEEL.",
+      category: "Investimento",
+    },
   ] as FAQItem[],
 };

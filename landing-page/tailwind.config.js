@@ -47,7 +47,7 @@ export default {
         'solar-hero': 'linear-gradient(115deg, #000211 0%, #000422 80%)',
       },
       fontFamily: {
-        sans: ['system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
       },
       transitionTimingFunction: {
         'out-strong': 'cubic-bezier(0.23, 1, 0.32, 1)',

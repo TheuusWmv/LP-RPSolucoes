@@ -138,5 +138,75 @@
         "unit": "unitless"
       }
     }
+  },
+  {
+    "stage": "publicado ap?s deploy",
+    "device": "mobile",
+    "url": "https://rpsolucoes.grupokami.com/",
+    "lighthouseVersion": "13.5.0",
+    "fetchTime": "2026-10-07T16:26:54.077Z",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 2007.9120000000003,
+        "unit": "millisecond"
+      },
+      "largest-contentful-paint": {
+        "value": 2195.44,
+        "unit": "millisecond"
+      },
+      "speed-index": {
+        "value": 2907.8405615163647,
+        "unit": "millisecond"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "unit": "millisecond"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "unit": "unitless"
+      }
+    }
+  },
+  {
+    "stage": "publicado ap?s deploy",
+    "device": "desktop",
+    "url": "https://rpsolucoes.grupokami.com/",
+    "lighthouseVersion": "13.5.0",
+    "fetchTime": "2026-10-07T16:27:15.176Z",
+    "scores": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "metrics": {
+      "first-contentful-paint": {
+        "value": 552.8685,
+        "unit": "millisecond"
+      },
+      "largest-contentful-paint": {
+        "value": 706.05,
+        "unit": "millisecond"
+      },
+      "speed-index": {
+        "value": 776.872144510907,
+        "unit": "millisecond"
+      },
+      "total-blocking-time": {
+        "value": 0,
+        "unit": "millisecond"
+      },
+      "cumulative-layout-shift": {
+        "value": 0,
+        "unit": "unitless"
+      }
+    }
   }
 ]
