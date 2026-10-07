@@ -1,0 +1,11 @@
+{
+  "name": "lp-rpsolucoes",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "setup": "npm ci --prefix landing-page && npm ci --prefix formulario",
+    "build": "node scripts/build.mjs",
+    "check": "node --test tests/*.test.mjs"
+  }
+}
