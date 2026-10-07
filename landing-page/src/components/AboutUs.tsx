@@ -157,15 +157,15 @@ export const AboutUs: React.FC = () => {
 
           {/* Cards 3 & 4: 2 Colunas Lado a Lado (Stats Compactos) */}
           <div className="col-span-2 grid grid-cols-2 gap-3">
-            {/* Card 3: 95% Card */}
+            {/* Card 3: 95% Card (Todo o texto em branco) */}
             <BlurReveal yOffset={16} blur="6px" className="min-h-[176px] min-w-0 rounded-[1.75rem] bg-gradient-to-br from-[#07263F] to-[#0A4D7E] p-4 flex flex-col justify-between border border-[#009ED7]/40 shadow-lg shadow-sky-950/20 text-white">
               <div className="flex items-center justify-between mb-2">
-                <TrendingDown className="w-5 h-5 text-[#009ED7]" />
-                <span className="text-xs font-extrabold uppercase tracking-wider text-[#009ED7]">Economia</span>
+                <TrendingDown className="w-5 h-5 text-white" />
+                <span className="text-xs font-extrabold uppercase tracking-wider text-white">Economia</span>
               </div>
               <div>
                 <span className="text-xs font-semibold text-white/90 block">Redução de até</span>
-                <div className="text-4xl font-black text-[#FFCC29] tracking-tighter leading-none my-1">
+                <div className="text-4xl font-black text-white tracking-tighter leading-none my-1">
                   <AnimatedCounter value={95} suffix="%" duration={1.2} />
                 </div>
                 <p className="text-xs text-white/90 leading-tight mt-1">
@@ -243,23 +243,23 @@ export const AboutUs: React.FC = () => {
             </div>
           </BlurRevealItem>
 
-          {/* Bento Item 2: Card Solar Destaque (Col 8-12) */}
+          {/* Bento Item 2: Card Solar Destaque (Col 8-12) com todo o texto em branco */}
           <BlurRevealItem
             yOffset={28}
             className="lg:col-span-5 rounded-[2rem] bg-gradient-to-br from-[#07263F] to-[#0A4D7E] p-7 sm:p-8 flex flex-col justify-between shadow-lg shadow-sky-950/20 border border-[#009ED7]/40 group transition-shadow duration-200 ease-out-strong hover:shadow-xl text-white"
           >
             <div className="flex items-center justify-between">
-              <span className="text-xs font-extrabold uppercase tracking-widest text-[#009ED7]">
+              <span className="text-xs font-extrabold uppercase tracking-widest text-white">
                 Economia Imediata
               </span>
-              <div className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md text-[#009ED7] flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md text-white flex items-center justify-center">
                 <TrendingDown className="w-5 h-5" />
               </div>
             </div>
 
             <div className="my-6 sm:my-8">
               <span className="text-xs font-semibold text-white/90 block">Redução garantida de até</span>
-              <div className="text-5xl sm:text-6xl font-black text-[#FFCC29] tracking-tighter leading-none my-2">
+              <div className="text-5xl sm:text-6xl font-black text-white tracking-tighter leading-none my-2">
                 <AnimatedCounter value={95} suffix="%" duration={1.2} />
               </div>
               <p className="text-sm sm:text-base font-semibold text-white leading-snug">
