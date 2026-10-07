@@ -115,8 +115,8 @@ export const HowItWorks: React.FC = () => {
                 <div
                   className={`w-11 h-11 rounded-full font-mono font-bold text-sm flex items-center justify-center relative z-10 transition-[background-color,color,box-shadow,transform] duration-250 ease-[cubic-bezier(0.23,1,0.32,1)] ${
                     isStepActive
-                      ? "bg-[var(--brand-accent)] text-white scale-105 ring-4 ring-red-500/30 shadow-md shadow-red-900/10"
-                      : "bg-neutral-950 text-white ring-4 ring-[#fafaf9] group-hover:scale-105 group-hover:bg-[var(--brand-accent)] group-hover:text-white"
+                      ? "bg-[var(--brand-accent)] text-[var(--brand-accent-text)] scale-105 ring-4 ring-[#009ED7]/30 shadow-md shadow-sky-950/10"
+                      : "bg-neutral-950 text-white ring-4 ring-[#fafaf9] group-hover:scale-105 group-hover:bg-[var(--brand-accent)] group-hover:text-[var(--brand-accent-text)]"
                   }`}
                 >
                   {step.number}
@@ -125,7 +125,7 @@ export const HowItWorks: React.FC = () => {
                 {/* Título do Passo */}
                 <h3
                   className={`font-bold text-base sm:text-lg tracking-tight mt-6 mb-2 transition-colors duration-200 ease-out ${
-                    isStepActive ? "text-neutral-950 font-extrabold" : "text-neutral-800 group-hover:text-[#872325]"
+                    isStepActive ? "text-neutral-950 font-extrabold" : "text-neutral-800 group-hover:text-[#009ED7]"
                   }`}
                 >
                   {step.title}
@@ -135,7 +135,7 @@ export const HowItWorks: React.FC = () => {
                 <span
                   className={`inline-block px-2.5 py-0.5 rounded-full text-[11px] font-semibold mb-3 border transition-[background-color,border-color,color,box-shadow] duration-200 ease-out ${
                     isStepActive
-                      ? "bg-red-50 text-red-950 border-red-200 shadow-xs"
+                      ? "bg-amber-50 text-amber-950 border-amber-200 shadow-xs"
                       : "bg-slate-200/70 text-slate-700 border-slate-300/40"
                   }`}
                 >
@@ -169,7 +169,7 @@ export const HowItWorks: React.FC = () => {
               </motion.span>
               <div className="min-w-0 pb-2 pt-2">
                 <h3 className="text-base font-bold text-neutral-950">{step.title}</h3>
-                <span className="inline-block my-3 px-3 py-1 rounded-full bg-red-50 text-red-950 border border-red-200 text-xs font-semibold">{step.duration}</span>
+                <span className="inline-block my-3 px-3 py-1 rounded-full bg-amber-50 text-amber-950 border border-amber-200 text-xs font-semibold">{step.duration}</span>
                 <p className="text-sm text-slate-600 leading-relaxed">{step.description}</p>
               </div>
             </BlurReveal>

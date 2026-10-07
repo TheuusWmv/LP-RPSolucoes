@@ -64,7 +64,7 @@ const TestimonialPhotoContent: React.FC<{ item: TestimonialItem }> = ({ item }) 
 );
 
 const quoteCardClassName =
-  "relative h-full w-full rounded-3xl bg-gradient-to-br from-[#E9191B] to-[#872325] text-white p-6 sm:p-10 lg:p-12 shadow-[0_25px_60px_-15px_rgba(233,25,27,0.25)] border border-red-500/40 flex flex-col justify-between overflow-hidden";
+  "relative h-full w-full rounded-3xl bg-gradient-to-br from-[#07263F] to-[#0B3B60] text-white p-6 sm:p-10 lg:p-12 shadow-2xl shadow-sky-950/25 border border-[#009ED7]/40 flex flex-col justify-between overflow-hidden";
 
 const TestimonialQuoteContent: React.FC<{ item: TestimonialItem; companyName: string }> = ({
   item,
@@ -81,13 +81,13 @@ const TestimonialQuoteContent: React.FC<{ item: TestimonialItem; companyName: st
     <div className="relative z-10">
       <div className="flex items-center justify-between mb-4">
         <div
-          className="text-white text-5xl sm:text-6xl font-serif font-black leading-none select-none opacity-80"
+          className="text-[#009ED7] text-5xl sm:text-6xl font-serif font-black leading-none select-none opacity-90"
           aria-hidden="true"
         >
           ““
         </div>
         {item.highlight && (
-          <span className="px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-xs font-bold text-white shadow-xs">
+          <span className="px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-[#009ED7]/40 text-xs font-bold text-white shadow-xs">
             {item.highlight}
           </span>
         )}
@@ -103,7 +103,7 @@ const TestimonialQuoteContent: React.FC<{ item: TestimonialItem; companyName: st
     <div className="relative z-10 flex flex-wrap items-center justify-between gap-4 pt-8 border-t border-white/20 mt-8">
       {/* Estrelas */}
       <div className="flex items-center gap-2 text-white">
-        <div className="flex items-center gap-1 text-amber-300">
+        <div className="flex items-center gap-1 text-[#FFCC29]">
           {[...Array(5)].map((_, i) => (
             <Star
               key={i}
@@ -117,8 +117,8 @@ const TestimonialQuoteContent: React.FC<{ item: TestimonialItem; companyName: st
       </div>
 
       {/* Logo / Selo Sutil */}
-      <div className="flex items-center gap-2 text-white/90 text-xs font-semibold uppercase tracking-wider font-mono">
-        <SunMedium className="w-4 h-4 text-white" />
+      <div className="flex items-center gap-2 text-[#009ED7] text-xs font-semibold uppercase tracking-wider font-mono">
+        <SunMedium className="w-4 h-4 text-[#FFCC29]" />
         <span>{companyName}</span>
       </div>
     </div>

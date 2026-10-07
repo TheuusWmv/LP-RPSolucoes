@@ -158,14 +158,14 @@ export const AboutUs: React.FC = () => {
           {/* Cards 3 & 4: 2 Colunas Lado a Lado (Stats Compactos) */}
           <div className="col-span-2 grid grid-cols-2 gap-3">
             {/* Card 3: 95% Card */}
-            <BlurReveal yOffset={16} blur="6px" className="min-h-[176px] min-w-0 rounded-[1.75rem] bg-gradient-to-br from-[#E9191B] to-[#872325] p-4 flex flex-col justify-between border border-red-500/40 shadow-sm text-white">
+            <BlurReveal yOffset={16} blur="6px" className="min-h-[176px] min-w-0 rounded-[1.75rem] bg-gradient-to-br from-[#07263F] to-[#0A4D7E] p-4 flex flex-col justify-between border border-[#009ED7]/40 shadow-lg shadow-sky-950/20 text-white">
               <div className="flex items-center justify-between mb-2">
-                <TrendingDown className="w-5 h-5 text-white" />
-                <span className="text-xs font-extrabold uppercase tracking-wider text-white/80">Economia</span>
+                <TrendingDown className="w-5 h-5 text-[#009ED7]" />
+                <span className="text-xs font-extrabold uppercase tracking-wider text-[#009ED7]">Economia</span>
               </div>
               <div>
                 <span className="text-xs font-semibold text-white/90 block">Redução de até</span>
-                <div className="text-4xl font-black text-white tracking-tighter leading-none my-1">
+                <div className="text-4xl font-black text-[#FFCC29] tracking-tighter leading-none my-1">
                   <AnimatedCounter value={95} suffix="%" duration={1.2} />
                 </div>
                 <p className="text-xs text-white/90 leading-tight mt-1">
@@ -175,19 +175,19 @@ export const AboutUs: React.FC = () => {
             </BlurReveal>
 
             {/* Card 4: Dark Card */}
-            <BlurReveal yOffset={16} blur="6px" className="min-h-[176px] min-w-0 rounded-[1.75rem] bg-neutral-950 text-white p-4 flex flex-col justify-between border border-neutral-800 shadow-md">
+            <BlurReveal yOffset={16} blur="6px" className="min-h-[176px] min-w-0 rounded-[1.75rem] bg-[#041A2E] text-white p-4 flex flex-col justify-between border border-[#009ED7]/40 shadow-md">
               <div className="flex items-center justify-between mb-2">
-                <Sun className="w-4 h-4 text-[var(--brand-accent)]" />
-                <span className="w-2 h-2 rounded-full bg-[var(--brand-accent)]" />
+                <Sun className="w-4 h-4 text-[#FFCC29]" />
+                <span className="w-2 h-2 rounded-full bg-[#009ED7]" />
               </div>
               <div>
                 <h4 className="text-sm font-bold text-white tracking-tight leading-snug">
                   Energia limpa em Goiás.
                 </h4>
-                <div className="text-lg font-black text-[var(--brand-accent)] tracking-tight mt-1">
+                <div className="text-lg font-black text-[#FFCC29] tracking-tight mt-1">
                   Sanclerlândia/GO
                 </div>
-                <p className="text-xs text-slate-400 leading-tight mt-0.5">
+                <p className="text-xs text-slate-300 leading-tight mt-0.5">
                   Engenharia de Raul Prado Nunes.
                 </p>
               </div>
@@ -243,23 +243,23 @@ export const AboutUs: React.FC = () => {
             </div>
           </BlurRevealItem>
 
-          {/* Bento Item 2: Card Solar Red (Col 8-12) */}
+          {/* Bento Item 2: Card Solar Destaque (Col 8-12) */}
           <BlurRevealItem
             yOffset={28}
-            className="lg:col-span-5 rounded-[2rem] bg-gradient-to-br from-[#E9191B] to-[#872325] p-7 sm:p-8 flex flex-col justify-between shadow-lg shadow-red-950/15 border border-red-500/40 group transition-shadow duration-200 ease-out-strong hover:shadow-xl text-white"
+            className="lg:col-span-5 rounded-[2rem] bg-gradient-to-br from-[#07263F] to-[#0A4D7E] p-7 sm:p-8 flex flex-col justify-between shadow-lg shadow-sky-950/20 border border-[#009ED7]/40 group transition-shadow duration-200 ease-out-strong hover:shadow-xl text-white"
           >
             <div className="flex items-center justify-between">
-              <span className="text-xs font-extrabold uppercase tracking-widest text-white/80">
+              <span className="text-xs font-extrabold uppercase tracking-widest text-[#009ED7]">
                 Economia Imediata
               </span>
-              <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md text-white flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md text-[#009ED7] flex items-center justify-center">
                 <TrendingDown className="w-5 h-5" />
               </div>
             </div>
 
             <div className="my-6 sm:my-8">
               <span className="text-xs font-semibold text-white/90 block">Redução garantida de até</span>
-              <div className="text-5xl sm:text-6xl font-black text-white tracking-tighter leading-none my-2">
+              <div className="text-5xl sm:text-6xl font-black text-[#FFCC29] tracking-tighter leading-none my-2">
                 <AnimatedCounter value={95} suffix="%" duration={1.2} />
               </div>
               <p className="text-sm sm:text-base font-semibold text-white leading-snug">
@@ -275,14 +275,14 @@ export const AboutUs: React.FC = () => {
           {/* Bento Item 3: Dark Navy Authority Card (Col 1-4) */}
           <BlurRevealItem
             yOffset={28}
-            className="lg:col-span-4 rounded-[2rem] bg-neutral-950 text-white p-7 sm:p-8 flex flex-col justify-between shadow-xl border border-neutral-800 group"
+            className="lg:col-span-4 rounded-[2rem] bg-[#041A2E] text-white p-7 sm:p-8 flex flex-col justify-between shadow-xl border border-[#009ED7]/40 group"
           >
             <div>
               <div className="flex items-center justify-between mb-6">
-                <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#009ED7]">
                   Sede Própria & Tradição
                 </span>
-                <span className="w-2.5 h-2.5 rounded-full bg-[var(--brand-accent)] animate-pulse-subtle" />
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FFCC29] animate-pulse-subtle" />
               </div>
 
               <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-2">
@@ -293,7 +293,7 @@ export const AboutUs: React.FC = () => {
               </p>
             </div>
 
-            <div className="pt-6 border-t border-white/10 mt-6 text-xs font-semibold text-[var(--brand-accent)]">
+            <div className="pt-6 border-t border-white/10 mt-6 text-xs font-semibold text-[#FFCC29]">
               Sanclerlândia/GO • Oeste e Centro Goiano
             </div>
           </BlurRevealItem>

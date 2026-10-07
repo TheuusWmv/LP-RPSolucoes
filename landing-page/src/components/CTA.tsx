@@ -23,7 +23,7 @@ export const CTA: React.FC = () => {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_65%_at_50%_-10%,rgba(255,255,255,0.32),rgba(255,255,255,0.07)_45%,transparent_80%)] pointer-events-none" />
 
         {/* Brilho solar sutil de profundidade */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_45%_at_50%_110%,rgba(212,246,88,0.12),transparent_75%)] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_45%_at_50%_110%,rgba(255,204,41,0.15),transparent_75%)] pointer-events-none" />
 
         {/* Borda refinada interna que acompanha a curvatura */}
         <div className="absolute inset-0 rounded-[inherit] border border-white/10 pointer-events-none" />
